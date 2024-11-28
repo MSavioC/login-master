@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url("https://i.pinimg.com/originals/74/79/77/747977dfedb099d3e9207b1a5bbd8563.jpg") no-repeat center center/cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(18, 18, 18, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    display: inline;
+}
+
+
+.listas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%; /* Ajuste a largura da área para um layout mais equilibrado */
+}
+
+.lista-item x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px; /* Espaço entre o título e a lista */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 8px; /* Espaço entre os itens das listas */
+}
+
+.baixa, .media, .alta {
+    width: 100px; /* Largura das listas */
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+}
+.item{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.lists {
+    padding: 50px;
+}
+
+
+  
+#show-tasks {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #ff007a, #ff9900);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+#show-tasks:hover {
+    background-color: #d20065;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
