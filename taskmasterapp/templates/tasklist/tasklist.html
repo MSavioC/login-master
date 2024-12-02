@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'registrotarefas/stylergst.css' %}">
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/5656/5656188.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+            <h1>Tarefas Adicionadas</h1>
+            <ul>
+                {% for task in tasks %}
+                <li>
+                    <strong>{{ task.title }}</strong> - {{ task.due_date }} -
+                    {{ task.priority }}
+                </li>
+                {% empty %}
+                <p>voce ainda nao possui tarefas cadastradas.</p>
+                {% endfor %}
+            </ul>
+            
+        <button id="show-tasks"><a href="{% url 'tasksregister' %}">Adicionar Tarefas</a></button>
+    </div>
+   
+</body>
+</html>

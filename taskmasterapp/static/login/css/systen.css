@@ -124,4 +124,31 @@
   .signup:hover {
     color: #ff007a;
   }
-  
+  .message{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  .message-sucess{
+    background-color: #fff;
+    color: green;
+    border: #fff;
+  }
+  .message-error{
+    background-color: #fff;
+    color: red;
+    border: #fff;
+  }
+  .message-info{
+background-color: white;
+color: blue;
+border: 1px solid white;
+  }  
+  .message-warning{
+    background-color: white;
+    color: red;
+    border: 1px solid white;
+  }

@@ -19,25 +19,26 @@
       
      </center>
       <h2>Crie sua conta<span class="dot">.</span></h2>
-      <form>
+      <form method="POST">
+        {% csrf_token %}
         <div class="input-group">
-          <label for="email">Nome de usuario</label>
-          <input type="email" id="email" placeholder="Digite seu usuario">
+          <label for="username">Nome de usuario</label>
+          <input type="text" name="username" id="username" placeholder="Digite seu usuario" required>
         </div>
         <div class="input-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Digite seu email">
+          <input type="email" name="email" id="email" placeholder="Digite seu email"required>
         </div>
         <div class="input-group">
           <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="Digite sua senha">
+          <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
         </div>
         <div class="input-group">
-          <label for="password">Confirme sua senha</label>
-          <input type="password" id="password" placeholder="Confirme sua senha">
+          <label for="confirm_password">Confirme sua senha</label>
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirme sua senha" required>
         </div>
         
-        <button type="submit" class="btn"><a href="{% url 'login' %}">Criar</a></button>
+        <button type="submit" class="btn">Criar</button>
         <a href="{% url 'login' %}" class="signup">Já tenho uma conta</a>
       </form>
     </div>

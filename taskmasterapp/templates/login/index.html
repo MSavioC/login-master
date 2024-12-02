@@ -36,9 +36,27 @@
         </div>
         <a href="" class="forgot-password">Esqueci a minha senha</a>
       <button type="submit" class="btn">Entrar</button>
-        <a href="{% url 'cadastrar' %}" class="signup">Ainda não tenho uma conta</a>
+        <a href="{% url 'registro' %}" class="signup">Ainda não tenho uma conta</a>
       </form>
     </div>
+    {% if messages %}
+    <div id="popup" class="popup">
+      {% for message in messages %}
+      <div class="message message-{{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
+  <script>
+    // Exibe o popup se ele existir
+    const popup = document.getElementById("popup");
+    if (popup) {
+      popup.style.display = "block";
+      // Oculta o popup apos 5 segundos
+      setTimeout(() =>{
+        popup.style.display = "none";
+      }, 5000);
+    }
+  </script>
 </body>
 </html>
